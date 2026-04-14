@@ -212,17 +212,60 @@ body {
   overflow: hidden;
 }
 
+/* ================= PROJECT ================= */
 .project-card img{
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  overflow: scroll;
+  height: 180px;
+  object-fit: contain;   
+  background: #0f172a;   
+  padding: 5px;
+}
+.project-card{
+  background: #1e293b;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.project-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+.project-content{
+  padding: 15px;
+}
+
+.project-content h5{
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.project-content p{
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.tech{
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+.project-btns a{
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.project-card:hover img{
+  transform: scale(1.05);
 }
 
 /* ================= QUALIFICATION ================= */
 
 .degree-preview{
-height:300px;
+height:120px;
 overflow:hidden;
 border-radius:8px;
 }
@@ -230,10 +273,168 @@ border-radius:8px;
 .degree-preview img{
 width:100%;
 }
-/* ================= RESPONSIVE ================= */
+.degree-preview:hover img{
+  transform: scale(1.05);
+}
 
-@media(max-width:768px){
+/* ================= MOBILE (<=768px) ================= */
+
+@media (max-width: 768px){
+
+  /* HERO 2 COLUMN FIX */
   .hero{
-    text-align:center;
+    flex-direction: row;   /* IMPORTANT: row hi rakha */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 120px;
+  }
+
+  .hero > div{
+    flex: 1;
+  }
+
+  .hero img{
+    width: 140px;
+    height: 220px;
+  }
+
+  .hero h1{
+    font-size: 18px;
+  }
+
+  .hero p{
+    font-size: 12px;
+  }
+
+  .btn-custom{
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  /* NAVBAR */
+  .navbar{
+    padding: 10px;
+  }
+
+  .nav-link{
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  footer{
+    text-align: center;
+    font-size: 14px;
+  }
+
+/* ================= ABOUT US ================= */
+  .about-container {
+        gap: 10px;
+    }
+
+    .about-image img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .about-text {
+        padding-left: 10px;
+        max-width: 220px;
+    }
+
+    .about-text h2 {
+        font-size: 16px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .about-text ul {
+        font-size: 12px;
+    }
+  /* ================= PROJECT ================= */
+       .project-card img{
+    height: 160px;   
+  }
+
+  .project-card{
+    margin-bottom: 20px;
+  }
+/* ================= QUALIFICATION ================= */
+  .degree-preview{
+    height: 100px;   
+  }
+    .project-card{
+    margin-bottom: 25px;
+  }
+}
+
+
+/* ================= TABLET (769px - 992px) ================= */
+
+@media (min-width: 769px) and (max-width: 992px){
+
+  /* HERO */
+  .hero{
+    gap: 30px;
+  }
+
+  .hero img{
+    width: 250px;
+    height: 400px;
+  }
+
+  .hero h1{
+    font-size: 24px;
+  }
+
+  .hero p{
+    font-size: 14px;
+  }
+
+  /* NAVBAR */
+  .nav-link{
+    font-size: 15px;
+  }
+
+  /* FOOTER */
+  footer{
+    font-size: 15px;
+  }
+/* ================= ABOUT US ================= */
+    .about-container {
+        gap: 20px;
+    }
+
+    .about-image img {
+        width: 250px;
+        height: 170px;
+    }
+
+    .about-text {
+        padding-left: 20px;
+        max-width: 380px;
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+ /* ================= PROJECT ================= */
+  .project-card img{
+    height: 180px;
+  }
+
+  .project-card{
+    margin-bottom: 25px;
+  }
+/* ================= QUALIFICATION ================= */
+ .degree-preview{
+    height: 120px;   
   }
 }
