@@ -332,43 +332,182 @@ width:100%;
         gap: 10px;
     }
 
-    .about-image img {
-        width: 140px;
-        height: 100px;
+    .about {
+        padding: 30px 10px;
+    }
+
+    .about-heading {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* IMAGE + TEXT SAME ROW */
+
+    .about-image {
+        width: 40%;
     }
 
     .about-text {
-        padding-left: 10px;
-        max-width: 220px;
+        width: 60%;
+    }
+
+    .about-image img {
+        max-width: 200px;
+        border-radius: 15px;
     }
 
     .about-text h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .about-text p {
-        font-size: 12px;
-        line-height: 1.4;
+        font-size: 14px;
+        line-height: 1.6;
     }
 
-    .about-text ul {
+    /* BADGES */
+
+    .about-highlights {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .about-highlights .badge {
         font-size: 12px;
+    }
+
+    /* CARDS */
+
+    .card {
+        padding: 15px !important;
+    }
+
+    .card h5 {
+        font-size: 18px;
+    }
+
+    .card p,
+    .card li {
+        font-size: 14px;
+    }
+
+    /* SKILLS */
+
+    h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .progress {
+        height: 22px;
+    }
+
+    .progress-bar {
+        font-size: 13px;
     }
   /* ================= PROJECT ================= */
-       .project-card img{
-    height: 160px;   
-  }
+   section.container{
+        padding-left:12px;
+        padding-right:12px;
+    }
 
-  .project-card{
-    margin-bottom: 20px;
-  }
-/* ================= QUALIFICATION ================= */
-  .degree-preview{
-    height: 100px;   
-  }
+    /* HEADING */
+
+    h1{
+        font-size:30px;
+    }
+
+    .text-center p{
+        font-size:14px;
+    }
+
+    /* PROJECT CARD */
+
     .project-card{
-    margin-bottom: 25px;
-  }
+        border-radius:15px;
+    }
+
+    .project-card img{
+        height:190px;
+    }
+
+    .project-card .card-body{
+        padding:18px;
+    }
+
+    .project-card .card-title{
+        font-size:20px;
+    }
+
+    .project-card .card-text{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    /* BUTTON */
+
+    .project-card .btn{
+        width:100%;
+        margin-bottom:10px;
+        font-size:14px;
+    }
+/* ================= QUALIFICATION ================= */
+  section.container{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    /* HEADING */
+
+    h1{
+        font-size:30px;
+    }
+
+    .text-center p{
+        font-size:14px;
+    }
+
+    /* CARDS */
+
+    .card{
+        padding:18px !important;
+    }
+
+    .card h5{
+        font-size:20px;
+    }
+
+    .card p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .card i{
+        font-size:32px;
+    }
+
+    /* IMAGE */
+
+    .degree-preview img{
+        height:170px;
+    }
+
+    /* BUTTON */
+
+    .card .btn{
+        width:100%;
+        font-size:14px;
+    }
+
+    /* MODAL */
+
+    .modal-dialog{
+        margin:10px;
+    }
+
+    #modalImage{
+        max-height:65vh;
+    }
 }
 
 
@@ -404,37 +543,56 @@ width:100%;
     font-size: 15px;
   }
 /* ================= ABOUT US ================= */
-    .about-container {
-        gap: 20px;
+    .about-heading {
+        font-size: 36px;
     }
 
     .about-image img {
-        width: 250px;
-        height: 170px;
-    }
-
-    .about-text {
-        padding-left: 20px;
-        max-width: 380px;
+        max-width: 220px;
     }
 
     .about-text h2 {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .about-text p {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .card h5 {
+        font-size: 20px;
+    }
+
+    .card p,
+    .card li {
+        font-size: 15px;
     }
  /* ================= PROJECT ================= */
   .project-card img{
-    height: 180px;
-  }
+        height:210px;
+    }
 
-  .project-card{
-    margin-bottom: 25px;
-  }
+    .project-card .card-title{
+        font-size:22px;
+    }
+
+    .project-card .card-text{
+        font-size:15px;
+    }
 /* ================= QUALIFICATION ================= */
- .degree-preview{
-    height: 120px;   
-  }
+ .card{
+        padding:22px;
+    }
+
+    .card h5{
+        font-size:22px;
+    }
+
+    .card p{
+        font-size:15px;
+    }
+
+    .degree-preview img{
+        height:190px;
+    }
 }
