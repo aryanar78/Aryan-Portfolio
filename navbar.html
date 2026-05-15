@@ -1,22 +1,81 @@
 <!-- ================= NAVBAR ================= -->
 
 <nav class="navbar navbar-expand-lg fixed-top">
-<div class="container">
-  <a class="navbar-brand fw-bold" href="index.html">Md Aryan Ali</a>
+  <div class="container">
 
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <a class="navbar-brand fw-bold" href="index.html">Md Aryan Ali</a>
 
-  <div class="collapse navbar-collapse" id="nav">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-      <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="qualification.html">Qualifications</a></li>
-      <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-    </ul>
-    <button onclick="toggleTheme()" class="btn btn-sm btn-custom ms-3">Toggle</button>
+    <!-- Hamburger Button -->
+    <button class="navbar-toggler border-0 shadow-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="qualification.html">Qualifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+      </ul>
+
+      <button onclick="toggleTheme()" class="btn btn-sm btn-custom ms-3">
+        Toggle
+      </button>
+    </div>
+
   </div>
-</div>
 </nav>
+
+<!-- ================= MOBILE SIDEBAR ================= -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+
+    <button type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas">
+    </button>
+  </div>
+
+  <div class="offcanvas-body">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About Us</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="qualification.html">Qualifications</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume</a>
+      </li>
+
+    </ul>
+
+    <button onclick="toggleTheme()" class="btn btn-custom w-100 mt-3">
+      Toggle Theme
+    </button>
+
+  </div>
+
+</div>
