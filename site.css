@@ -406,8 +406,26 @@ footer p{
 
 @media (max-width: 768px){
 
-   .navbar{
-    padding: 10px 0;
+  body{
+    overflow-x: hidden;  }
+   
+    .navbar{
+      width: 100%;
+    padding: 12px 15px;
+  }
+  #mobileMenu {
+    width: 200px;
+    height: auto
+    border-radius 20px 0 0 20px;
+  }
+  #mobileMenu .nav-link:hover{
+    color: #00e5ff;
+  }
+  .navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .navbar-brand{
@@ -416,7 +434,7 @@ footer p{
 
   /* HERO 2 COLUMN FIX */
   .hero{
-    flex-direction: row;   /* IMPORTANT: row hi rakha */
+    flex-direction: row;   
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -451,20 +469,22 @@ footer p{
   }
 
   .nav-link{
-    font-size: 14px;
+    font-size: 120px;
   }
 
   /* FOOTER */
    footer{
-    padding: 18px 12px;
+    width: 100%;
+    padding: 20px 10px;
     margin-top: 40px;
+    text-align: center;
   }
 
   footer .container{
     width: 100%;
     max-width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left:0  10px;
+    padding-right:0 10px;
   }
 
   footer p{
